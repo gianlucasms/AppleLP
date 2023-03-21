@@ -1,0 +1,242 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-weight: 600;
+    overflow: hidden;
+    min-height: 100vh;
+}
+
+header {
+    background-color: white;
+    box-shadow: 0 0 0 4px rgba(0, 0, 0, 0.364);
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.logo img {
+    cursor: pointer;
+    width: 70px;
+}
+
+.menu {
+    width: 60%;
+    text-align: center;
+}
+
+.lista {
+    display: flex;
+    justify-content: space-around;
+}
+
+ul {
+    list-style: none;
+}
+
+li {
+    font-size: 15px;
+    cursor: pointer;
+}
+
+.search {}
+
+.search img {
+    cursor: pointer;
+    width: 20px;
+}
+
+.search .threelines {
+    width: 22px;
+}
+
+main {
+    background-color: rgba(178, 178, 178, 0.171);
+    width: 100%;
+    height: 100vh;
+    display: flex;
+}
+
+aside {
+    display: flex;
+    width: 50%;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    text-align: center;
+}
+
+.text {
+    display: inline-block;
+    width: 100%;
+}
+
+.text h3 {
+    font-size: 2vw;
+    color: blueviolet;
+}
+
+.text h1 {
+    font-size: 4vw;
+    color: blue;
+}
+
+.text p {
+    font-size: 1vw;
+    color: grey;
+}
+
+.botoes {
+    display: inline-block;
+    width: 100%;
+    margin-top: 30px;
+    justify-content: space-evenly;
+}
+
+.botoes .join {
+    /* padding: 10px 35px; */
+    width: 15vw;
+    height: 2vw;
+    font-size: 1vw;
+    font-weight: 750;
+    letter-spacing: 1.5px;
+    color: white;
+    background-color: rgb(94, 25, 159);
+    border-radius: 50px;
+    cursor: pointer;
+    box-shadow: 3px 3px 5px 1px rgba(0, 0, 0, 0.653);
+    border: 1.1px solid black;
+    transition: 0.3s;
+}
+
+.botoes .not {
+    /* padding: 10px 35px; */
+    width: 15vw;
+    height: 2vw;
+    font-size: 1vw;
+    font-weight: 750;
+    letter-spacing: 1.5px;
+    color: rgb(94, 25, 159);
+    background-color: rgb(255, 255, 255);
+    border-radius: 50px;
+    cursor: pointer;
+    box-shadow: 3px 3px 5px 1px rgba(0, 0, 0, 0.653);
+    border: 2px solid rgb(94, 25, 159);
+    margin-left: 20px;
+    transition: 0.3s;
+}
+
+.botoes .not:hover {
+    transition: 0.3s;
+    color: white;
+    background-color: blueviolet;
+}
+
+.botoes .join:hover {
+    transition: 0.3s;
+    color: rgb(94, 25, 159);
+    background-color: rgb(255, 255, 255);
+}
+
+.imgultrabook {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 40%;
+}
+
+.imgultrabook img {
+    width: 100%;
+}
+
+@media screen and (max-width: 850px) {
+    main {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    aside {
+        width: 100%;
+        display: flex;
+        height: 50vh;
+        align-items: center;
+    }
+
+    .menu {
+        margin: 0;
+    }
+
+    li {
+        font-size: 1.8vw;
+    }
+
+    .text {
+        margin-top: 50px;
+        position: relative;
+        right: 0;
+    }
+
+    .text h1 {
+        font-size: 6vw;
+    }
+
+    .text h3 {
+        font-size: 3vw;
+    }
+
+    .text p {
+        font-size: 2vw;
+    }
+
+    .botoes {
+        height: 50px;
+    }
+
+    .botoes .join {
+        font-size: 2vw;
+        width: 30%;
+        height: 4vw;
+    }
+
+    .botoes .not {
+        font-size: 2vw;
+        width: 30%;
+        height: 4vw;
+    }
+
+    .imgultrabook {
+        width: 80%;
+    }
+}
+
+@media (min-width: 908) and (max-width: 1466) {
+    .imgultrabook img {
+        width: 10px;
+    }
+
+}
+
+@media screen and (max-width: 540px) {
+    .menu {}
+
+    li {
+        font-size: 1.8vw;
+    }
+
+}
+
+@media screen and (max-width: 375px) {
+    .botoes .join {
+        height: 20px;
+    }
+
+    .botoes .not {
+        height: 20px;
+    }
+}
